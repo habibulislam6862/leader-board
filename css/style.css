@@ -24,7 +24,7 @@ a:hover{
     text-decoration: underline;
 }
 .container{
-    width: 870px;
+    max-width: 870px;
     margin: 0 auto;
 }
 h2{
@@ -93,8 +93,11 @@ nav ul li a{
 .featured-content .container, .course-content .container{
     background-color: white;
     border-radius: 5px;
-    padding:33px;
     margin-bottom: 20px;
+    padding:33px;
+}
+header .container{
+    padding:0 33px;
 }
 /*Featured content*/
 .featured-content{
@@ -183,4 +186,28 @@ nav ul li a{
 .duration>i, .duration span{
     color: #FF4A60;
     font-size: 14.69px;
+}
+@media only screen and (max-width: 700px) {
+    .player-single {
+        align-items: center;
+        gap: 16px;
+        flex-basis: 50%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .player-single {
+        align-items: center;
+        gap: 16px;
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width: 818px) {
+    .blog-single {
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width: 866px) {
+    .course-single {
+        flex-basis: 100%;
+    }
 }
