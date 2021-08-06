@@ -74,12 +74,14 @@ header .container, header .container .logo{
     margin-left: 16px
 }
 /*Nav menu*/
+.nav-area, .nav-area nav ul{
+    column-gap: 36px;
+}
 nav ul{
     padding: 0
 }
 nav ul li{
     list-style-type: none;
-    margin-right: 36px
 }
 nav ul li a{
     color: white;
@@ -209,5 +211,10 @@ header .container{
 @media only screen and (max-width: 866px) {
     .course-single {
         flex-basis: 100%;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .nav-area, .nav-area nav ul{
+        column-gap: 20px;
     }
 }
